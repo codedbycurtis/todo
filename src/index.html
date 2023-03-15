@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <script type="text/javascript" src="js/index.js" defer></script>
+    <title>To Do</title>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="header">
+            <h1><span class="material-symbols-sharp">task</span> To Do</h1>
+        </div>
+        <div id="main">
+            <div id="main__display">
+                <div id="tasks-page">
+                    <div class="page-header">
+                        <h2 class="page-header-heading">My Tasks</h2>
+                        <span id="add-button" class="material-symbols-sharp symbol-button" title="Add Task">add</span>
+                    </div>
+                    <div id="task-list-container">
+                        <ul id="task-list"></ul>
+                    </div>
+                </div>
+                <div id="task-page">
+                    <div class="page-header">
+                        <div style="display: flex; align-items: center;">
+                            <span id="back-button" class="material-symbols-sharp symbol-button back-button" title="Back">arrow_back</span>
+                            <h2 class="page-header-heading"></h2>
+                        </div>
+                    </div>
+                    <form id="task-page__form" method="post">
+                        <div>
+                            <input style="width: 100%" name="task-title" id="task-title" type="text" placeholder="Title" required>
+                        </div>
+                        <div>
+                            <textarea name="task-description" id="task-description" placeholder="Description (optional)"></textarea>
+                        </div>
+                        <div>
+                            <label for="task-date">Due Date</label>
+                            <input name="task-date" id="task-date" type="date" required>
+                        </div>
+                        <div>
+                            <label for="task-time">Due Time</label>
+                            <input name="task-time" id="task-time" type="time" required>
+                        </div>
+                        <div>
+                            <label for="task-colour">Colour</label>
+                            <input name="task-colour" id="task-colour" type="color">
+                        </div>
+                        <input id="task-submit" type="submit">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <p>&copy; Curtis Caulfield <span id="current-year"></span></p>
+        </div>
+    </div>
+</body>
+</html>
